@@ -19,36 +19,46 @@ Lest´s Bora!
 
 #### TESTES UNITÁRIOS
 
-O que são testes?
-
-Porque devo usar os teste?
-ERROS acontecem com frequência e para termos a certeza de que tudo está certinho, seguro e saudável devemos escrever testes
-os erros mais comuns sâo:
+O que são testes?<br />
+Teste são os resultados da análise da API.<br />
+Por exemplo, para sabermos se nosso nível de insulina está OK, devemos realisar um teste de Glicose, onde o resultado tem que ser entre 80 e 100.<br />
+Se ocorre alguma alteração, devemos consultar um médico (DEV) e tomar as providências necessarias.<br />
+Assim acontece no resultado do teste, no nosso caso a ferramenta Jest.
+<br />
+Porque devo usar os teste?<br />
+ERROS acontecem com frequência e para termos a certeza de que tudo está certinho, seguro e saudável devemos escrever testes.<br />
+<br />Os erros mais comuns são:
 * Falta de atenção
 * Falha na cominicação do time
 * Versões de bibliotecas e frameworks desatualizados
 
-*Devemos sempre nos atentar aos princípios
+**Devemos sempre nos atentar aos princípios**
 * QUALIDADE - ter um código limpo e funcional 
 * CONFIANÇA - confiar na equipe e no código
 * TEMPO - economia de tempo e dinheiro
 
-Pensando em Testes:
-* 1º anali de Requisitos  (levantamento de autorizações e solicitaçõe)
-* 2º Plano de teste (definição de estrutura, ferramentas e nível em que iremos chegar)
+**Pensando em Testes:**
+* 1º Analise de Requisitos  (levantamento de autorizações e solicitações)
+* 2º Plano de testes (definição de estrutura, ferramentas e nível em que iremos chegar)
 * 3º Caso de teste (mapa de comportamento esperado, cenários de stress do código)
-* 4 ºAmbiente  de teste  
-* 5º Implementação
+* 4º Ambiente  de teste (DEV, homologação com todas as partes envolvidas e aplicação)
+* 5º Implementação (Quando está tudo OK, bora rodar)
 
-O que são testes unitários?
-Os tstes unitários estão na base da pirâmide de teste, o restante dessa pirâmide, trataremos nos próximos artigos
+**Pirâmide de testes:**<br />
+Os testes unitários estão na base da pirâmide de teste, e a ferramenta aqui aplicada está ligada a esse nível num ambiente DEV, o restante dessa pirâmide, trataremos nos próximos artigos.<br />
+A pirâmide se compôem em 3 níveis:<br />
+**TESTES UNITÁRIOS** ( testes curtos e isolados, Analisa função ou método, Rápido e de baixo custo *ConsoleLog*)
+*NÃO GARANTE UMA INTEGRAÇÃO PERFEITA DOS MÓDULOS<br />
+**INTEGRAÇÃO** (testes de rotas e requisições, se comunica facilmente com módulos e elimina bugs e alterações de código, maior custo e mais demorado *MongoDB*)
+*NÃO ANALISA TODO O FLUXO DA APLICAÇÃO<br />
+**E2E** (chamado de Ponta a Ponta, Teste de alto nível, analisa TODOS os módulos e staks)
+*MUITO LENTO E DE CUSTO ELEVADO<br />
 
+**Agora que já sei os porquê´s, bora instalar nosso Jest.**
 
-Agora que já sei os porquê´s, bora instalar nosso Jest.
+Sua API está prontinha? Tudo rodando legalzinho?
 
-Sua API está prontinha? Tudo rodando Gostozinho?
-
-Como instalar o Jest?
+**Como instalar o Jest?**<br />
 Abra um terminal no seu VS Code
 
 Digite o comando:
@@ -79,20 +89,22 @@ test('adds 1 + 2 to equal 3', () => {
 });
 
 
-Como rodar o Jest?
+**Como rodar o Jest?**
 
 Por fim, execute no terminal do VS Code: npm run test e o Jest irá imprimir a seguinte mensagem:
 
 PASS  ./exemplo.test.js
 ✓ adds 1 + 2 to equal 3 (5ms)
 
-Como ler o resultado do Jest?
+**Como ler o resultado do Jest?**<br />
+O Bom mora aqui, o Jest mostra a falha, caminho de onde ela está o erro e possível alteração pra conserto.
+Tudo de maneira bem fácil e colorida, tipo vermelho para erro e verde para sucesso.
 
 Conclusão:
 Jest é uma beleza, uma SUPER ferramenta que deve andar sempre de mãos dadas com o bom profissional.
 
-Agradecimento:
-A toda equipe Reprograma, a professora Sra. Louise Costa, a minha amiga Greice Pereira Giacomelli, a todas as Devas da minha turma.
+Agradecimento:<br />
+A toda equipe Reprograma, a professora Sra. Louise Costa, a minha amiga Greice Pereira Giacomelli, a professora Sra. Tereza Oliveira e a todas as Devas da minha turma.<br />
 Agradeço a Grande Deusa por me manter num caminho reto. Desejo a todos que chegaram até aqui muita saúde e prosperidade. Que assim se faça!
 
 
