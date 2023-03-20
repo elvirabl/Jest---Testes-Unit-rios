@@ -21,9 +21,28 @@ Lest´s Bora!
 
 O que são testes?
 
-Porque devo usar os testes?
+Porque devo usar os teste?
+ERROS acontecem com frequência e para termos a certeza de que tudo está certinho, seguro e saudável devemos escrever testes
+os erros mais comuns sâo:
+* Falta de atenção
+* Falha na cominicação do time
+* Versões de bibliotecas e frameworks desatualizados
+
+*Devemos sempre nos atentar aos princípios
+* QUALIDADE - ter um código limpo e funcional 
+* CONFIANÇA - confiar na equipe e no código
+* TEMPO - economia de tempo e dinheiro
+
+Pensando em Testes:
+* 1º anali de Requisitos  (levantamento de autorizações e solicitaçõe)
+* 2º Plano de teste (definição de estrutura, ferramentas e nível em que iremos chegar)
+* 3º Caso de teste (mapa de comportamento esperado, cenários de stress do código)
+* 4 ºAmbiente  de teste  
+* 5º Implementação
 
 O que são testes unitários?
+Os tstes unitários estão na base da pirâmide de teste, o restante dessa pirâmide, trataremos nos próximos artigos
+
 
 Agora que já sei os porquê´s, bora instalar nosso Jest.
 
