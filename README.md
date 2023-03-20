@@ -25,11 +25,11 @@ Por exemplo, para sabermos se nosso nível de insulina está OK, devemos realisa
 Se ocorre alguma alteração, devemos consultar um médico (DEV) e tomar as providências necessarias.<br />
 Assim acontece no resultado do teste, no nosso caso a ferramenta Jest.
 <br />
-Porque devo usar os teste?<br />
+<br />**Porque devo usar os teste?**<br />
 ERROS acontecem com frequência e para termos a certeza de que tudo está certinho, seguro e saudável devemos escrever testes.<br />
 <br />Os erros mais comuns são:
 * Falta de atenção
-* Falha na cominicação do time
+* Falha na comunicação do time
 * Versões de bibliotecas e frameworks desatualizados
 
 **Devemos sempre nos atentar aos princípios**
