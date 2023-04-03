@@ -4,9 +4,8 @@
 
 ![image](https://user-images.githubusercontent.com/109379404/218550620-b6e3ba73-5b0d-49ef-b96c-a5b79a46968e.png)
 
-## mas na verdade, ele é o Good Doctor
+## mas na verdade, ele é um Anjinho
 
-![image](https://user-images.githubusercontent.com/109379404/218551273-3a956590-0b9f-49b3-8745-c11df45b06b9.png)
 
 ### O melhor jeito de aprender é ensinar!!!
 
@@ -19,13 +18,14 @@ Lest´s Bora!
 
 #### TESTES UNITÁRIOS
 
-O que são testes?<br />
-Teste são os resultados da análise da API.<br />
-Por exemplo, para sabermos se nosso nível de insulina está OK, devemos realisar um teste de Glicose, onde o resultado tem que ser entre 80 e 100.<br />
-Se ocorre alguma alteração, devemos consultar um médico (DEV) e tomar as providências necessarias.<br />
-Assim acontece no resultado do teste, no nosso caso a ferramenta Jest.
+O que são testes unitários?<br />
+Testes são os resultados da análise de uma unidade de código.<br />
+Por exemplo, para sabermos se nosso nível de insulina está OK, devemos realizar um teste de Glicose, onde o resultado tem que ser entre 70 e 100.
+Se ocorre alguma alteração, devemos consultar um médico (DEV) e tomar as providências necessárias.
+Assim acontece nos testes em geral, no nosso caso a ferramenta é o Jest.
 <br />
 <br />**Porque devo usar os teste?**<br />
+<br />Os testes unitários cobrem as partes menores do código, porém, podemos iniciar desde a criação da primeira pasta. Quanto a API estiver pronta, as pequenas partes que formam o todo, estarão previamente testadas e saudáveis<br />
 ERROS acontecem com frequência e para termos a certeza de que tudo está certinho, seguro e saudável devemos escrever testes.<br />
 <br />Os erros mais comuns são:
 * Falta de atenção
@@ -36,6 +36,8 @@ ERROS acontecem com frequência e para termos a certeza de que tudo está certin
 * QUALIDADE - ter um código limpo e funcional 
 * CONFIANÇA - confiar na equipe e no código
 * TEMPO - economia de tempo e dinheiro
+<br />Ter um código LIMPO, ORGANIZADO E FUNCIONAL, contando sempre com uma EQUIPE dedicada e preparada, economiza TEMPO... e Tempo é DINHEIRO.
+O Jest garante que esteja tudo sem ERRO e com uma maior economia de tempo.<br />
 
 **Pensando em Testes:**
 * 1º Analise de Requisitos  (levantamento de autorizações e solicitações)
@@ -59,10 +61,21 @@ A pirâmide se compôem em 3 níveis:<br />
 Sua API está prontinha? Tudo rodando legalzinho?
 
 **Como instalar o Jest?**<br />
+CRIAR PASTA
+TESTES-UNITARIOS
+PARA ARMAZENAR TODOS OS ARQUIVOS
+
 Abra um terminal no seu VS Code
+CRIAR ARQUIVO .PRETTIENG
+FORMATA O CÓDIGO SEM PONTO E VÍRGULA (;) E COM ASPAS SIMPLES (')
+
+Digite o comando:
+NPM -Y INIT
+CRIA UMA BASE PARA PROJETOS EM JS
 
 Digite o comando:
 npm install --save-dev jest
+BAIXA A FRAMEWORK DO JEST
 
 Adicione a seguinte seção ao seu package.json:
 {
@@ -73,21 +86,19 @@ Adicione a seguinte seção ao seu package.json:
 
 Exemplo:
 Vamos começar por escrever um teste para uma função hipotética que soma dois números.
-Primeiro, crie um arquivo exemplo.js:
+Primeiro, crie um arquivo MyCode.js:
 
-function exemplo(a, b) {
-  return a + b;
+const sum = (a,b) =>{
+  return a+b
 }
-module.exports = exemplo;
+module.exports = {sum}
 
-Em seguida, crie um arquivo chamado exemplo.test.js. Este aquivo irá guardar o nosso teste real:
+Em seguida, crie um arquivo chamado MyCode.test.js. Este aquivo irá guardar o nosso teste real:
 
-const exemplo = require('./exemplo');
+const {sum} = require('./MyCode')
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(exemplo(1, 2)).toBe(3);
-});
-
+it('sums 2 numbers',() =>{
+   expect(sum(1,2)).toBe (3)
 
 **Como rodar o Jest?**
 
